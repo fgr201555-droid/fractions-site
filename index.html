@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة الكسور</title>
+</head>
+<body>
+
+<h2>حاسبة ضرب الكسور</h2>
+
+<input id="a" placeholder="بسط الأول">
+<input id="b" placeholder="مقام الأول"><br><br>
+
+<input id="c" placeholder="بسط الثاني">
+<input id="d" placeholder="مقام الثاني"><br><br>
+
+<button onclick="calc()">احسب</button>
+
+<p id="result"></p>
+
+<script>
+function calc() {
+  let a = document.getElementById("a").value;
+  let b = document.getElementById("b").value;
+  let c = document.getElementById("c").value;
+  let d = document.getElementById("d").value;
+
+  let numerator = a * c;
+  let denominator = b * d;
+
+  document.getElementById("result").innerText =
+    "الناتج: " + numerator + "/" + denominator;
+}
+</script>
+
+</body>
+</html>
